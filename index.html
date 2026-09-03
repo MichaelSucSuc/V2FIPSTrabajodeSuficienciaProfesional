@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Práctica para la Elaboración del Trabajo de Suficiencia Profesional | FIPS - UNSA</title>
+    <meta name="description" content="Guía práctica para la elaboración del Trabajo de Suficiencia Profesional (TSP) en la Facultad de Ingeniería de Producción y Servicios - UNSA (2026).">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Logos/LogoUnsaSquare.png">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <a href="#inicio" class="logo-area">
+                <img src="Logos/LogoUnsaFIPS.png" alt="UNSA FIPS Logo" class="logo-img">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active" id="nav-inicio">Inicio</a>
+                <a href="#proposito" class="nav-link" id="nav-proposito">Propósito y Principios</a>
+                <a href="#ruta" class="nav-link" id="nav-ruta">Ruta TSP</a>
+                <a href="#estructura" class="nav-link" id="nav-estructura">Capítulos</a>
+                <a href="#cierre" class="nav-link" id="nav-cierre">Conclusiones y Anexos</a>
+                <a href="#checklist" class="nav-link" id="nav-checklist">Checklist</a>
+                <a href="#errores" class="nav-link" id="nav-errores">Errores a Evitar</a>
+                <a href="#caratula" class="nav-link" id="nav-caratula">Carátula</a>
+                <a href="#recursos" class="nav-link" id="nav-recursos">Recursos</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i data-lucide="moon" class="toggle-icon-moon"></i>
+                    <i data-lucide="sun" class="toggle-icon-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="inicio">
+        <div class="hero-grid-pattern"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="faculty-tag animate-fade-in">
+                    <span class="badge-gold">FIPS 2026</span>
+                    <span class="tag-separator">•</span>
+                    <span>Modalidad TSP</span>
+                </div>
+                <h1 class="hero-title animate-slide-up">GUÍA PRÁCTICA PARA LA ELABORACIÓN DEL <span class="highlight-text">TRABAJO DE SUFICIENCIA PROFESIONAL</span></h1>
+                <p class="hero-subtitle animate-slide-up">Facultad de Ingeniería de Producción y Servicios - UNSA<br><strong>Versión simplificada y orientada a la construcción del TSP</strong> (2026)</p>
+                <div class="hero-ctas animate-fade-in">
+                    <a href="#estructura" class="btn btn-accent ripple">
+                        <span>Explorar Capítulos</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#checklist" class="btn btn-secondary">
+                        <span>Ver Checklist</span>
+                        <i data-lucide="check-square"></i>
+                    </a>
+                </div>
+                <div class="hero-disclaimer animate-fade-in" style="margin-top: 24px; display: flex; align-items: center; gap: 12px; background: rgba(212, 175, 55, 0.15); border: 2px solid var(--color-accent-gold); padding: 14px 18px; border-radius: 8px; max-width: 560px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                    <i data-lucide="shield-alert" style="color: var(--color-accent-gold); width: 24px; height: 24px; flex-shrink: 0;"></i>
+                    <span style="font-size: 0.9rem; line-height: 1.45; color: #FFFFFF; font-weight: 600;">
+                        Esta página funciona como una herramienta interactiva de orientación para la construcción de tu TSP.
+                    </span>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-in">
+                <div class="illustration-wrapper">
+                    <div class="glowing-circle"></div>
+                    <div class="academic-portrait-frame">
+                        <div class="frame-inner">
+                            <img src="Logos/graduated_student.png" alt="Estudiante Graduado FIPS" class="hero-student-img">
+                            <div class="frame-overlay-badge">
+                                <i data-lucide="award"></i>
+                                <span>Éxito FIPS 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative Floating Badges -->
+                    <div class="floating-badge badge-1">
+                        <i data-lucide="briefcase" class="badge-icon"></i>
+                        <span>Experiencia</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i data-lucide="cpu" class="badge-icon"></i>
+                        <span>Ingeniería</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i data-lucide="award" class="badge-icon"></i>
+                        <span>Suficiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Propósito & 2. Principios Section -->
+    <section class="purpose-section" id="proposito">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Fundamentos</span>
+                <h2 class="section-title">1. Propósito de esta guía</h2>
+                <p class="section-subtitle">Esta guía convierte la elaboración del Trabajo de Suficiencia Profesional (TSP) en una ruta práctica. Su objetivo no es repetir la normativa ni transformar el TSP en una tesis de investigación, sino ayudar al egresado a demostrar de manera ordenada una experiencia profesional real, las decisiones técnicas que tomó, las acciones que ejecutó, los resultados que obtuvo y el aporte que realizó.</p>
+            </div>
+
+            <!-- IDEA CENTRAL -->
+            <div class="idea-central-card reveal">
+                <div class="idea-central-header">
+                    <span class="idea-central-badge"><i data-lucide="target"></i> IDEA CENTRAL</span>
+                </div>
+                <p class="idea-central-text">
+                    El TSP debe permitir responder cinco preguntas: ¿qué problema o necesidad existía?, ¿qué decisión profesional se tomó?, ¿qué se hizo?, ¿qué resultados se obtuvieron? y ¿cuál fue el aporte personal del egresado?
+                </p>
+            </div>
+
+            <!-- 2. Principios para redactar un buen TSP -->
+            <div style="margin-top: 60px;">
+                <div class="section-header text-center reveal">
+                    <span class="section-tag">Criterios de Calidad</span>
+                    <h2 class="section-title">2. Principios para redactar un buen TSP</h2>
+                    <p class="section-subtitle">Directrices fundamentales para asegurar la solidez y pertinencia de tu informe profesional.</p>
+                </div>
+
+                <div class="principles-grid reveal">
+                    <div class="principle-card">
+                        <div class="principle-icon-wrapper">
+                            <i data-lucide="check-circle-2"></i>
+                        </div>
+                        <div>
+                            <h4 class="principle-title">• Pertinencia</h4>
+                            <p class="principle-desc">incluir solo información que ayude a comprender la experiencia profesional.</p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon-wrapper">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <div>
+                            <h4 class="principle-title">• Evidencia</h4>
+                            <p class="principle-desc">sustentar problemas, decisiones y resultados con datos, registros, documentos, gráficos, diagramas o capturas.</p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon-wrapper">
+                            <i data-lucide="user-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="principle-title">• Participación personal</h4>
+                            <p class="principle-desc">diferenciar claramente lo realizado por el egresado de lo realizado por el equipo o la organización.</p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon-wrapper">
+                            <i data-lucide="git-merge"></i>
+                        </div>
+                        <div>
+                            <h4 class="principle-title">• Coherencia</h4>
+                            <p class="principle-desc">mantener relación entre problema, objetivos, actividades, indicadores, resultados y conclusiones.</p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon-wrapper">
+                            <i data-lucide="scissors"></i>
+                        </div>
+                        <div>
+                            <h4 class="principle-title">• Síntesis</h4>
+                            <p class="principle-desc">evitar repetir la misma información en distintos capítulos.</p>
+                        </div>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-icon-wrapper">
+                            <i data-lucide="lock"></i>
+                        </div>
+                        <div>
+                            <h4 class="principle-title">• Confidencialidad</h4>
+                            <p class="principle-desc">proteger información reservada y utilizar solo información autorizada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Roadmap Section: Ruta simplificada del TSP -->
+    <section class="roadmap-section" id="ruta">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Ruta Metodológica</span>
+                <h2 class="section-title">3. Ruta simplificada del TSP</h2>
+                <p class="section-subtitle">Visualiza la secuencia de los 5 capítulos del TSP con sus preguntas clave y productos esperados.</p>
+            </div>
+
+            <div class="roadmap-container reveal">
+                <div class="roadmap-scroll-wrapper">
+                    <div class="roadmap-steps-grid" id="roadmapStepsGrid">
+                        <div class="roadmap-line">
+                            <div class="roadmap-progress-indicator" id="roadmapProgress"></div>
+                        </div>
+                        <div class="roadmap-step-node active" data-step="1" onclick="scrollToStep(1)">
+                            <div class="node-circle">I</div>
+                            <span class="node-label">Exp. Profesional</span>
+                            <div class="node-tooltip">Capítulo I. Experiencia profesional</div>
+                        </div>
+                        <div class="roadmap-step-node" data-step="2" onclick="scrollToStep(2)">
+                            <div class="node-circle">II</div>
+                            <span class="node-label">Problema y Obj.</span>
+                            <div class="node-tooltip">Capítulo II. Problema y objetivos</div>
+                        </div>
+                        <div class="roadmap-step-node" data-step="3" onclick="scrollToStep(3)">
+                            <div class="node-circle">III</div>
+                            <span class="node-label">Sustento Prof.</span>
+                            <div class="node-tooltip">Capítulo III. Sustento profesional</div>
+                        </div>
+                        <div class="roadmap-step-node" data-step="4" onclick="scrollToStep(4)">
+                            <div class="node-circle">IV</div>
+                            <span class="node-label">Desarrollo</span>
+                            <div class="node-tooltip">Capítulo IV. Desarrollo de la experiencia</div>
+                        </div>
+                        <div class="roadmap-step-node" data-step="5" onclick="scrollToStep(5)">
+                            <div class="node-circle">V</div>
+                            <span class="node-label">Resultados</span>
+                            <div class="node-tooltip">Capítulo V. Resultados y aporte profesional</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table: Ruta simplificada del TSP -->
+            <div class="comparison-table-wrapper reveal" style="margin-top: 40px;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Capítulo</th>
+                            <th>Pregunta principal</th>
+                            <th>Producto esperado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>I. Experiencia profesional</strong></td>
+                            <td>¿Quién soy profesionalmente y dónde desarrollé la experiencia?</td>
+                            <td>Contexto laboral relevante</td>
+                        </tr>
+                        <tr>
+                            <td><strong>II. Problema y objetivos</strong></td>
+                            <td>¿Qué situación debía mejorar y qué buscaba lograr?</td>
+                            <td>Problema, objetivos y justificación</td>
+                        </tr>
+                        <tr>
+                            <td><strong>III. Sustento profesional</strong></td>
+                            <td>¿Qué conocimientos, métodos y criterios sustentan mi intervención?</td>
+                            <td>Base técnica breve y pertinente</td>
+                        </tr>
+                        <tr>
+                            <td><strong>IV. Desarrollo de la experiencia</strong></td>
+                            <td>¿Qué hice y cómo lo hice?</td>
+                            <td>Intervención profesional documentada</td>
+                        </tr>
+                        <tr>
+                            <td><strong>V. Resultados y aporte profesional</strong></td>
+                            <td>¿Qué cambió, qué aporté y qué aprendí?</td>
+                            <td>Resultados, evidencia y reflexión profesional</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Structure Section: Capítulos Detallados -->
+    <section class="structure-section" id="estructura">
+        <div class="container">
+            <div class="section-header flex-header">
+                <div>
+                    <span class="section-tag">Desarrollo de Contenido</span>
+                    <h2 class="section-title">Estructura Detallada de Capítulos</h2>
+                </div>
+                <div class="search-box-container">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="sectionSearch" placeholder="Buscar por tema, palabra clave..." class="search-input" aria-label="Buscar secciones">
+                    <button class="clear-search-btn" id="clearSearch" aria-label="Limpiar búsqueda" style="display: none;">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-search-state" id="emptySearchState" style="display: none;">
+                <i data-lucide="alert-circle" class="empty-icon"></i>
+                <h3>No se encontraron resultados</h3>
+                <p>Intenta buscando otros términos como "perfil", "diagnóstico", "línea base", "aporte", "indicador" o "justificación".</p>
+                <button class="btn btn-secondary btn-sm" onclick="resetSearch()">Restaurar búsqueda</button>
+            </div>
+
+            <div class="cards-grid" id="cardsGrid">
+                
+                <!-- Card 01: CAPÍTULO I. EXPERIENCIA PROFESIONAL -->
+                <div class="thesis-card reveal" data-step="1" data-category="problema">
+                    <div class="card-border-glow"></div>
+                    <div class="card-header">
+                        <span class="card-number">01</span>
+                        <div class="card-icon-container">
+                            <i data-lucide="user" class="card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badge-row">
+                            <span class="card-category">Capítulo I</span>
+                            <span class="card-badge badge-important">Experiencia</span>
+                        </div>
+                        <h3 class="card-title">CAPÍTULO I. EXPERIENCIA PROFESIONAL</h3>
+                        
+                        <div class="chapter-objective-box">
+                            <p>Presenta la trayectoria profesional estrictamente necesaria para comprender y sustentar la experiencia que será desarrollada. No debe convertirse en un currículum vitae extenso.</p>
+                        </div>
+
+                        <div class="card-key-points">
+                            <div class="subsections-visual-grid">
+                                
+                                <!-- 1.1 Perfil profesional -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">1.1</span>
+                                        <h5>Perfil profesional</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Redacta un breve perfil que muestre tu formación, experiencia y especialidad vinculadas con el tema del TSP.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>Nombres y apellidos</li>
+                                        <li>Escuela Profesional</li>
+                                        <li>Grado académico</li>
+                                        <li>Estudios de especialización relacionados con el área.</li>
+                                        <li>Diplomados, cursos o certificaciones relevantes.</li>
+                                        <li>Capacitación técnica vinculada con la experiencia presentada.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 1.2 Experiencia profesional relevante -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">1.2</span>
+                                        <h5>Experiencia profesional relevante</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Lista las principales empresas en las que ha trabajado</p>
+                                    <div class="comparison-table-wrapper" style="margin: 14px 0 6px 0;">
+                                        <table class="comparison-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Empresa / institución</th>
+                                                    <th>Cargo</th>
+                                                    <th>Periodo</th>
+                                                    <th>Funciones relacionadas con el TSP</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Empresa A</td>
+                                                    <td>Cargo profesional</td>
+                                                    <td>Mes/Año - Mes/Año</td>
+                                                    <td>Funciones directamente relacionadas con la experiencia</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Empresa B</td>
+                                                    <td>Cargo profesional</td>
+                                                    <td>Mes/Año - Mes/Año</td>
+                                                    <td>Funciones relevantes, si corresponde</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- 1.3 Organización y área de trabajo -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">1.3</span>
+                                        <h5>Organización y área de trabajo</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Ubica brevemente al jurado evaluador en la situación específica en la que surgió la necesidad de intervención.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>Denominación de la empresa o institución.</li>
+                                        <li>Sector o actividad económica.</li>
+                                        <li>Descripción general de sus actividades.</li>
+                                        <li>Ubicación geografica</li>
+                                        <li>Organigrama, cuando sea pertinente.</li>
+                                        <li>Área de la organización donde se desarrolló la experiencia.</li>
+                                        <li>Fecha de inicio y término.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 02: CAPÍTULO II. PROBLEMA Y OBJETIVOS -->
+                <div class="thesis-card reveal" data-step="2" data-category="teoria">
+                    <div class="card-border-glow"></div>
+                    <div class="card-header">
+                        <span class="card-number">02</span>
+                        <div class="card-icon-container">
+                            <i data-lucide="target" class="card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badge-row">
+                            <span class="card-category">Capítulo II</span>
+                            <span class="card-badge badge-tip">Problema y Objetivos</span>
+                        </div>
+                        <h3 class="card-title">CAPÍTULO II. PROBLEMA Y OBJETIVOS</h3>
+
+                        <div class="chapter-objective-box">
+                            <p>Este capítulo explica qué situación profesional requería atención, por qué era importante intervenir y qué se buscó lograr. Debe ser concreto y orientado a una experiencia real.</p>
+                        </div>
+
+                        <div class="card-key-points">
+                            <div class="subsections-visual-grid">
+                                
+                                <!-- 2.1 Contexto de la experiencia -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">2.1</span>
+                                        <h5>Contexto de la experiencia</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Ubica brevemente al jurado evaluador en la situación específica en la que surgió la necesidad de intervención.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>¿Qué proceso, proyecto, sistema, operación o servicio estaba involucrado?</li>
+                                        <li>¿Qué estaba ocurriendo?</li>
+                                        <li>¿Durante qué periodo?</li>
+                                        <li>¿Quiénes estaban involucrados?</li>
+                                        <li>Diagrama o flujo si facilita la comprensión</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 2.2 Situación problemática -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">2.2</span>
+                                        <h5>Situación problemática</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Describe la condición que afectaba el desempeño del proceso, sistema, servicio, equipo u organización antes de tu intervención.</p>
+                                    <div style="background: rgba(var(--color-primary-rgb), 0.05); border-left: 3px solid var(--color-accent-gold); padding: 12px 16px; border-radius: 0 6px 6px 0; margin-top: 10px;">
+                                        <h6 style="font-family: var(--font-heading); font-size: 0.9rem; margin-bottom: 6px; color: var(--color-text); font-weight: 700;">Preguntas guía</h6>
+                                        <ul class="bullet-list-gold" style="margin-bottom: 0;">
+                                            <li>¿Qué estaba funcionando de manera deficiente?</li>
+                                            <li>¿A quién afectaba?</li>
+                                            <li>¿Qué consecuencias generaba?</li>
+                                            <li>¿Qué evidencia demuestra que el problema existía?</li>
+                                            <li>Si es posible considerar:  Reportes de incidencias; Tiempos, costos o errors; Registros de operación, Observación documentada</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- 2.3 Problema principal -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">2.3</span>
+                                        <h5>Problema principal</h5>
+                                    </div>
+                                    <p>Formula el problema en una sola idea central. Puede expresarse como una pregunta o como una declaración técnica, según las disposiciones de la Escuela Profesional.</p>
+                                    <div class="format-sug-box">
+                                        <span class="format-sug-badge"><i data-lucide="help-circle"></i> FORMATO SUGERIDO</span>
+                                        <p class="format-sug-code">¿Cómo mejorar [proceso/resultado] mediante [intervención o enfoque] en [unidad/organización/contexto]?</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2.4 Objetivo general -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">2.4</span>
+                                        <h5>Objetivo general</h5>
+                                    </div>
+                                    <p>Debe indicar el resultado principal que se busca alcanzar con la experiencia profesional. Utiliza un verbo observable: mejorar, optimizar, implementar, reducir, diseñar, automatizar, evaluar, incrementar, estandarizar, entre otros.</p>
+                                </div>
+
+                                <!-- 2.5 Objetivos específicos -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">2.5</span>
+                                        <h5>Objetivos específicos</h5>
+                                    </div>
+                                    <p>Se recomienda utilizar entre tres y cinco objetivos específicos. Cada uno debe corresponder a una etapa o resultado relevante de la intervención.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>Analizar o diagnosticar la situación inicial.</li>
+                                        <li>Diseñar o definir la solución.</li>
+                                        <li>Implementar o ejecutar las acciones.</li>
+                                        <li>Evaluar los resultados obtenidos.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 2.6 Justificación -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">2.6</span>
+                                        <h5>Justificación</h5>
+                                    </div>
+                                    <p>Explica por qué la intervención era necesaria y qué valor aportaba. Puede considerar aspectos prácticos, técnicos, tecnológicos, económicos, operativos o de seguridad, según corresponda. Evita crear muchas subcategorías si no agregan valor.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 03: CAPÍTULO III. SUSTENTO PROFESIONAL -->
+                <div class="thesis-card reveal" data-step="3" data-category="direccion">
+                    <div class="card-border-glow"></div>
+                    <div class="card-header">
+                        <span class="card-number">03</span>
+                        <div class="card-icon-container">
+                            <i data-lucide="book-open" class="card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badge-row">
+                            <span class="card-category">Capítulo III</span>
+                            <span class="card-badge badge-important">Sustento</span>
+                        </div>
+                        <h3 class="card-title">CAPÍTULO III. SUSTENTO PROFESIONAL</h3>
+
+                        <div class="chapter-objective-box">
+                            <p>Incluye únicamente los conocimientos necesarios para comprender las decisiones tomadas durante la experiencia. No debe convertirse en un marco teórico extenso ni en un manual de las herramientas utilizadas. Si un concepto no ayuda a explicar una decisión, procedimiento, indicador, herramienta o resultado del TSP, probablemente no necesita desarrollarse.</p>
+                        </div>
+
+                        <div class="card-key-points">
+                            <div class="subsections-visual-grid">
+                                
+                                <!-- 3.1 Antecedentes relacionados -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">3.1</span>
+                                        <h5>Antecedentes relacionados</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Selecciona antecedentes, proyectos o experiencias que ayuden a sustentar la solución aplicada o a comparar enfoques.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>¿Qué experiencias similares existen?</li>
+                                        <li>¿Qué métodos han sido utilizados en problemas semejantes?</li>
+                                        <li>¿Qué limitaciones o aprendizajes son relevantes para mi caso?</li>
+                                        <li>Puede utilizar artículos, normas, manuales técnicos o documentación profesional confiable</li>
+                                        <li>Se sugiere de 2 a 5 antecedentes realmente pertinentes</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 3.2 Metodología, procedimiento o enfoque utilizado (si corresponde) -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">3.2</span>
+                                        <h5>Metodología, procedimiento o enfoque utilizado (si corresponde)</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Explica brevemente el método aplicado y, sobre todo, cómo se utilizó en tu experiencia real.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>¿Qué metodología utilicé?</li>
+                                        <li>¿Por qué era adecuada?</li>
+                                        <li>¿Qué etapas apliqué?</li>
+                                        <li>¿Cómo adapté el método al contexto real?</li>
+                                        <li>Algunos ejmplos: Scrum, Kanban, ITIL, Lean, Six Sigma, </li>
+                                        <li>La metodología se conecta con las actividades del Capítulo IV.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 3.3 Normas, estándares y criterios técnicos (si corresponde) -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">3.3</span>
+                                        <h5>Normas, estándares y criterios técnicos (si corresponde)</h5>
+                                    </div>
+                                    <p>Incluye las normas, estándares, manuales, especificaciones, criterios de diseño, parámetros de operación o reglas técnicas que sustentaron sus decisiones. No es necesario incorporar esta sección si no aplica al tipo de experiencia.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 04: CAPÍTULO IV. DESARROLLO DE LA EXPERIENCIA PROFESIONAL -->
+                <div class="thesis-card reveal" data-step="4" data-category="metodo">
+                    <div class="card-border-glow"></div>
+                    <div class="card-header">
+                        <span class="card-number">04</span>
+                        <div class="card-icon-container">
+                            <i data-lucide="cogs" class="card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badge-row">
+                            <span class="card-category">Capítulo IV</span>
+                            <span class="card-badge badge-important">Desarrollo Central</span>
+                        </div>
+                        <h3 class="card-title">CAPÍTULO IV. DESARROLLO DE LA EXPERIENCIA PROFESIONAL</h3>
+
+                        <div class="chapter-objective-box">
+                            <p>Este es el capítulo central del TSP. Debe mostrar de manera secuencial qué hizo el profesional, cómo tomó decisiones, qué herramientas utilizó, qué evidencias generó y cómo verificó la solución.</p>
+                        </div>
+
+                        <div class="card-key-points">
+                            <div class="subsections-visual-grid">
+                                
+                                <!-- 4.1 Situación inicial y línea base -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">4.1</span>
+                                        <h5>Situación inicial y línea base</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Presenta cómo se encontraba el proceso o sistema antes de la intervención y establece una línea base que permita comparar posteriormente.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>¿Cuál era el desempeño inicial?</li>
+                                        <li>¿Qué indicadores estaban disponibles?</li>
+                                        <li>¿Qué limitaciones existían?</li>
+                                        <li>Evidencias o Recursos Recomendados: Indicadores, Tablas y gráficos, Tiempos, Errores, Costos, Capturas o fotografías, Reportes</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 4.2 Diagnóstico -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">4.2</span>
+                                        <h5>Diagnóstico</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Analiza las causas o factores que explicaban la situación inicial.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>¿Por qué ocurría el problema?</li>
+                                        <li>¿Cuáles eran las principales causas?</li>
+                                        <li>¿Qué información permitió identificarlas?</li>
+                                        <li>Evidencia o recursos recomendados: análisis de logs, entrevistas, observación, análisis de datos, etc.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 4.3 Solución propuesta -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">4.3</span>
+                                        <h5>Solución propuesta</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Describe la solución seleccionada y explica por qué era adecuada para el problema diagnosticado.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>¿Qué propuse?</li>
+                                        <li>¿Qué alternativas consideré?</li>
+                                        <li>¿Por qué elegí esta solución?</li>
+                                        <li>¿Qué restricciones debía respetar?</li>
+                                        <li>Evidencias o recursos recomendados: Diagrama de solución, Arquitectura, Plan de trabajo, Matriz de alternativasy criterios de selección.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 4.4 Desarrollo e implementación -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">4.4</span>
+                                        <h5>Desarrollo e implementación</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Organiza las actividades por etapas, no como una lista de funciones laborales. Cada etapa debería indicar qué se hizo, cómo se hizo, quién participó, qué herramienta se utilizó y qué producto o resultado generó.</p>
+                                </div>
+
+                                <!-- 4.5 Evidencias de la experiencia -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">4.5</span>
+                                        <h5>Evidencias de la experiencia</h5>
+                                    </div>
+                                    <ul class="bullet-list-gold">
+                                        <li>Las evidencias principales deben aparecer en el cuerpo del trabajo, explicadas y vinculadas con la actividad que demuestran.</li>
+                                        <li>Capturas de sistemas o dashboards.</li>
+                                        <li>Diagramas de arquitectura, procesos o flujo.</li>
+                                        <li>Fotografías de actividades o equipos, cuando corresponda.</li>
+                                        <li>Reportes, actas, registros.</li>
+                                        <li>Código, configuraciones o documentos técnicos relevantes.</li>
+                                        <li>Tablas de indicadores y resultados de pruebas.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 4.6 Seguimiento e indicadores -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">4.6</span>
+                                        <h5>Seguimiento e indicadores</h5>
+                                    </div>
+                                    <ul class="bullet-list-gold">
+                                        <li>Define los indicadores que permitirán verificar si la intervención funcionó.</li>
+                                        <li>Algunos indicadores: tiempo de proceso/errors</li>
+                                        <li>Considerar la unidad de medida: dias, porcentaje</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 05: CAPÍTULO V. RESULTADOS Y APORTE PROFESIONAL -->
+                <div class="thesis-card reveal" data-step="5" data-category="propuesta">
+                    <div class="card-border-glow"></div>
+                    <div class="card-header">
+                        <span class="card-number">05</span>
+                        <div class="card-icon-container">
+                            <i data-lucide="bar-chart-2" class="card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badge-row">
+                            <span class="card-category">Capítulo V</span>
+                            <span class="card-badge badge-important">Resultados y Aporte</span>
+                        </div>
+                        <h3 class="card-title">CAPÍTULO V. RESULTADOS Y APORTE PROFESIONAL</h3>
+
+                        <div class="chapter-objective-box">
+                            <p>Presenta qué cambió después de la intervención, compara los resultados con la situación inicial y explica cuál fue el aporte específico del profesional.</p>
+                        </div>
+
+                        <div class="card-key-points">
+                            <div class="subsections-visual-grid">
+                                
+                                <!-- 5.1 Resultados según los objetivos -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">5.1</span>
+                                        <h5>Resultados según los objetivos</h5>
+                                    </div>
+                                    <p>La forma más clara de presentar los resultados es relacionarlos directamente con los objetivos específicos.</p>
+                                    <div class="comparison-table-wrapper" style="margin: 14px 0 6px 0;">
+                                        <table class="comparison-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Objetivo específico</th>
+                                                    <th>Resultado obtenido</th>
+                                                    <th>Indicador / dato</th>
+                                                    <th>Evidencia</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Objetivo 1</td>
+                                                    <td>Resultado concreto alcanzado</td>
+                                                    <td>Dato cuantitativo o cualitativo</td>
+                                                    <td>Tabla / gráfico / documento</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Objetivo 2</td>
+                                                    <td>Resultado concreto alcanzado</td>
+                                                    <td>Dato cuantitativo o cualitativo</td>
+                                                    <td>Tabla / gráfico / documento</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- 5.2 Comparación antes y después -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">5.2</span>
+                                        <h5>Comparación antes y después</h5>
+                                    </div>
+                                    <div class="comparison-table-wrapper" style="margin: 14px 0 10px 0;">
+                                        <table class="comparison-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Indicador</th>
+                                                    <th>Antes</th>
+                                                    <th>Después</th>
+                                                    <th>Variación</th>
+                                                    <th>Interpretación</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tiempo</td>
+                                                    <td>30 días</td>
+                                                    <td>6 días</td>
+                                                    <td>-80 %</td>
+                                                    <td>Reducción significativa del tiempo del proceso</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Errores</td>
+                                                    <td>15</td>
+                                                    <td>5</td>
+                                                    <td>-67 %</td>
+                                                    <td>Menor retrabajo y mayor calidad</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="subcard-hint recommendation">
+                                        <i data-lucide="info"></i>
+                                        <span>Los datos anteriores son únicamente ilustrativos. El TSP debe utilizar valores reales, trazables y autorizados.</span>
+                                    </div>
+                                </div>
+
+                                <!-- 5.3 Beneficios obtenidos -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">5.3</span>
+                                        <h5>Beneficios obtenidos</h5>
+                                    </div>
+                                    <ul class="bullet-list-gold">
+                                        <li>Técnicos: mejora del desempeño, calidad, disponibilidad, confiabilidad o exactitud.</li>
+                                        <li>Operativos: reducción de tiempos, retrabajos, fallas o incidencias.</li>
+                                        <li>Económicos: ahorro o reducción de costos, solo cuando pueda sustentarse.</li>
+                                        <li>Organizacionales: mejora de procedimientos, coordinación o toma de decisiones.</li>
+                                        <li>Tecnológicos: automatización, integración, escalabilidad o modernización.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 5.4 Aporte profesional -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">5.4</span>
+                                        <h5>Aporte profesional</h5>
+                                    </div>
+                                    <div class="subcard-hint recommendation" style="margin-bottom: 12px; margin-top: 0;">
+                                        <i data-lucide="help-circle"></i>
+                                        <strong>¿QUÉ DEBES HACER?</strong>
+                                    </div>
+                                    <p>Explica con claridad qué valor generaste personalmente. Esta sección diferencia una narración del proyecto de una demostración de suficiencia profesional.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>¿Qué propuse personalmente?</li>
+                                        <li>¿Qué diseñé, analicé, implementé, coordiné o evalué?</li>
+                                        <li>¿Qué decisiones dependieron de mi criterio profesional?</li>
+                                        <li>¿Qué valor no habría existido sin mi participación?</li>
+                                        <li>No atribuyo al profesional resultados que corresponden únicamente al equipo.</li>
+                                        <li>El aporte está respaldado por evidencia.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 5.5 Dificultades y decisiones tomadas -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">5.5</span>
+                                        <h5>Dificultades y decisiones tomadas</h5>
+                                    </div>
+                                    <p>Presenta los retos más importantes y cómo fueron enfrentados.</p>
+                                </div>
+
+                                <!-- 5.6 Lecciones aprendidas y competencias desarrolladas -->
+                                <div class="visual-subcard">
+                                    <div class="subcard-header">
+                                        <span class="subcard-num">5.6</span>
+                                        <h5>Lecciones aprendidas y competencias desarrolladas</h5>
+                                    </div>
+                                    <p>Reflexiona sobre los conocimientos y competencias fortalecidos durante la experiencia. Relaciona la reflexión con situaciones concretas, no con frases genéricas.</p>
+                                    <ul class="bullet-list-gold">
+                                        <li>Resolución de problemas y toma de decisiones.</li>
+                                        <li>Aplicación de conocimientos técnicos.</li>
+                                        <li>Gestión de proyectos y planificación.</li>
+                                        <li>Comunicación y coordinación con equipos o stakeholders.</li>
+                                        <li>Uso de herramientas tecnológicas.</li>
+                                        <li>Liderazgo, responsabilidad y ética profesional.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Closure Sections: Conclusiones, Recomendaciones, Referencias, Anexos -->
+    <section class="closure-section" id="cierre">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Secciones Finales del TSP</span>
+                <h2 class="section-title">Conclusiones, Recomendaciones, Referencias y Anexos</h2>
+                <p class="section-subtitle">Pautas institucionales para el cierre riguroso y la documentación de respaldo de tu informe final.</p>
+            </div>
+
+            <div class="closure-grid reveal">
+                
+                <!-- Conclusiones -->
+                <div class="closure-card">
+                    <div class="closure-card-top">
+                        <div class="closure-card-icon">
+                            <i data-lucide="check-check"></i>
+                        </div>
+                        <h3 class="closure-card-title">CONCLUSIONES</h3>
+                    </div>
+                    <p class="closure-card-body">Las conclusiones deben responder al objetivo general y a los objetivos específicos utilizando los resultados demostrados. No deben introducir información nueva.</p>
+                    <div class="closure-hint-box">
+                        <strong>FORMA RECOMENDADA</strong><br>
+                        Conclusión general + una conclusión por cada objetivo específico. Cada conclusión debe indicar el resultado alcanzado y, cuando sea posible, el dato que lo sustenta.
+                    </div>
+                </div>
+
+                <!-- Recomendaciones -->
+                <div class="closure-card">
+                    <div class="closure-card-top">
+                        <div class="closure-card-icon">
+                            <i data-lucide="compass"></i>
+                        </div>
+                        <h3 class="closure-card-title">RECOMENDACIONES</h3>
+                    </div>
+                    <p class="closure-card-body">Deben derivarse de los resultados, limitaciones o lecciones aprendidas. Evita recomendaciones genéricas. Indica qué debería mantenerse, mejorarse, ampliarse o evaluarse en el futuro.</p>
+                </div>
+
+                <!-- Referencias -->
+                <div class="closure-card">
+                    <div class="closure-card-top">
+                        <div class="closure-card-icon">
+                            <i data-lucide="library"></i>
+                        </div>
+                        <h3 class="closure-card-title">REFERENCIAS</h3>
+                    </div>
+                    <p class="closure-card-body">Incluye las fuentes realmente utilizadas para sustentar metodologías, normas, antecedentes, criterios técnicos y herramientas. Utiliza el estilo de citación establecido por la Escuela Profesional o por la normativa institucional vigente.</p>
+                </div>
+
+                <!-- Anexos -->
+                <div class="closure-card">
+                    <div class="closure-card-top">
+                        <div class="closure-card-icon">
+                            <i data-lucide="paperclip"></i>
+                        </div>
+                        <h3 class="closure-card-title">ANEXOS</h3>
+                    </div>
+                    <p class="closure-card-body">Incluye únicamente evidencia complementaria que respalde la experiencia y que, por extensión o detalle, no corresponda al cuerpo principal.</p>
+                    <ul class="bullet-list-gold" style="margin-top: 6px;">
+                        <li>Constancias o documentos que acrediten la experiencia, cuando corresponda.</li>
+                        <li>Diagramas detallados.</li>
+                        <li>Reportes completos.</li>
+                        <li>Instrumentos utilizados.</li>
+                        <li>Capturas adicionales.</li>
+                        <li>Documentación técnica autorizada.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist Section: Checklist Final del TSP -->
+    <section class="checklist-section" id="checklist">
+        <div class="container">
+            <div class="checklist-card reveal">
+                <div class="checklist-header">
+                    <div class="checklist-header-text">
+                        <span class="section-tag">Autoevaluación Oficial</span>
+                        <h2 class="section-title">CHECKLIST FINAL DEL TSP</h2>
+                        <p>Verifica que tu informe cumpla rigurosamente con cada uno de los criterios antes de presentarlo ante la comisión evaluadora.</p>
+                    </div>
+                    <div class="checklist-progress-circle-container">
+                        <svg class="progress-ring" width="120" height="120">
+                            <circle class="progress-ring__circle-bg" stroke="var(--color-bg-alt)" stroke-width="8" fill="transparent" r="50" cx="60" cy="60"/>
+                            <circle class="progress-ring__circle" id="checklistProgressCircle" stroke="var(--color-accent)" stroke-width="8" fill="transparent" r="50" cx="60" cy="60"/>
+                        </svg>
+                        <div class="progress-ring-text" id="checklistProgressText">0%</div>
+                    </div>
+                </div>
+
+                <div class="checklist-category-card" style="box-shadow: none; border: none; padding: 0; background: transparent;">
+                    <div class="category-items" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px;">
+                        
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-1">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">La experiencia profesional seleccionada es real, verificable y pertinente.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-2">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">El Capítulo I explica quién soy profesionalmente sin convertirse en un CV extenso.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-3">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">La organización y el área se describen solo en lo necesario.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-4">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">El problema está claramente identificado y sustentado con evidencia.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-5">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Los objetivos son coherentes con el problema.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-6">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">El sustento profesional incluye solo teoría, metodologías, herramientas y criterios realmente utilizados.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-7">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">La situación inicial cuenta con una línea base o evidencia verificable.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-8">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">El diagnóstico explica las causas del problema.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-9">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">La solución propuesta responde al diagnóstico.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-10">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Las actividades del Capítulo IV se presentan de manera secuencial.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-11">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Se distingue claramente mi participación de la participación del equipo.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-12">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Las evidencias principales aparecen en el cuerpo del trabajo.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-13">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Los indicadores tienen valores iniciales y finales cuando corresponde.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-14">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Los resultados están relacionados con los objetivos.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-15">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Existe una comparación antes/después cuando es posible.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-16">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">El aporte profesional está expresado de manera explícita.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-17">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Las conclusiones se derivan de los resultados.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-18">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Las recomendaciones se derivan de resultados, limitaciones o lecciones aprendidas.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-19">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">Se ha protegido la información confidencial.</span>
+                        </label>
+
+                        <label class="checklist-item">
+                            <input type="checkbox" class="checklist-cb" data-id="chk-20">
+                            <span class="custom-cb"></span>
+                            <span class="item-text">No existen repeticiones innecesarias entre capítulos.</span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="checklist-footer">
+                    <div class="checklist-status-bar">
+                        <div class="checklist-status-fill" id="checklistBarFill" style="width: 0%"></div>
+                    </div>
+                    <div class="checklist-actions">
+                        <button class="btn btn-secondary" onclick="resetChecklist()">
+                            <i data-lucide="refresh-cw"></i>
+                            <span>Reiniciar Lista</span>
+                        </button>
+                        <button class="btn btn-accent ripple" onclick="downloadChecklist()">
+                            <i data-lucide="download"></i>
+                            <span>Descargar Reporte</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Errores Frecuentes Section -->
+    <section class="errors-section" id="errores">
+        <div class="container">
+            <div class="errors-container-card reveal">
+                <div class="errors-header">
+                    <div class="errors-icon-box">
+                        <i data-lucide="alert-triangle"></i>
+                    </div>
+                    <div>
+                        <h3>ERRORES FRECUENTES QUE DEBES EVITAR</h3>
+                        <p style="margin: 4px 0 0 0; color: var(--color-text-muted); font-size: 0.95rem;">Observaciones recurrentes señaladas por los jurados evaluadores de la FIPS.</p>
+                    </div>
+                </div>
+
+                <div class="errors-list-grid">
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Repetir la descripción de la empresa en varios capítulos.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Presentar funciones laborales como si fueran el desarrollo de la experiencia.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Incluir un marco teórico extenso que no se utiliza después.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Describir herramientas sin explicar para qué se utilizaron.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Afirmar mejoras sin presentar datos o evidencia.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Confundir el resultado del equipo con el aporte personal del egresado.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Presentar resultados que no responden a los objetivos.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Duplicar la situación inicial en los capítulos IV y V sin necesidad.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Utilizar cifras confidenciales sin autorización.</span>
+                    </div>
+
+                    <div class="error-item-card">
+                        <i data-lucide="x-circle"></i>
+                        <span>Redactar conclusiones genéricas o introducir información nueva.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cover Page Section -->
+    <section class="cover-section" id="caratula">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Formato Oficial</span>
+                <h2 class="section-title">Carátula Oficial del TSP</h2>
+                <p class="section-subtitle">Descarga la plantilla de carátula oficial aprobada por la Facultad en formato Word para tu informe final.</p>
+            </div>
+
+            <div class="cover-download-container reveal" style="max-width: 600px; margin: 40px auto; background: var(--color-bg-alt); border: 1px solid var(--color-border); padding: 32px; border-radius: var(--radius-lg); text-align: center; box-shadow: var(--shadow-md);">
+                <div style="background: rgba(212, 175, 55, 0.15); width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: var(--color-accent-gold);">
+                    <i data-lucide="file-text" style="width: 32px; height: 32px;"></i>
+                </div>
+                <h3 style="font-size: 1.35rem; margin-bottom: 8px; font-family: var(--font-heading); color: var(--color-text);">Modelo Carátula TSP FIPS</h3>
+                <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 24px;">Plantilla de carátula oficial editable en formato Microsoft Word (.docx) con la estructura jerárquica y datos requeridos por la directiva de la FIPS.</p>
+                <a href="src/EjemploCaratulas/Modelo%20Caratula%20TDS.docx" download class="btn btn-accent ripple" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: 600; margin: 0 auto;">
+                    <i data-lucide="download"></i>
+                    <span>Descargar Plantilla (.docx)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section" id="recursos">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Recursos de Apoyo</span>
+                <h2 class="section-title">Herramientas Esenciales para tu TSP</h2>
+                <p class="section-subtitle">Bases de datos, normativas de citación y recursos académicos indispensables para tu reporte técnico.</p>
+            </div>
+
+            <div class="resources-grid">
+                
+                <!-- Resource 1: Buscadores y Estándares -->
+                <div class="resource-card reveal">
+                    <div class="resource-icon-box orange">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <h3>Buscadores y Normas Técnicas</h3>
+                    <p>Accede a patentes, estándares técnicos y artículos científicos para sustentar los criterios de ingeniería de tu TSP.</p>
+                    <div class="resource-list-container">
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">Buscador IEEE Xplore</span>
+                                <span class="resource-item-desc">Repositorio líder de literatura en tecnología, sistemas e ingeniería.</span>
+                            </div>
+                            <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank" rel="noopener noreferrer" class="resource-link">Acceder</a>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">Google Académico (Scholar)</span>
+                                <span class="resource-item-desc">Buscador de literatura académico-científica de Google.</span>
+                            </div>
+                            <a href="https://scholar.google.com/?hl=es" target="_blank" rel="noopener noreferrer" class="resource-link">Acceder</a>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">Catálogo de Normas Técnicas - INDECOPI</span>
+                                <span class="resource-item-desc">Normas Técnicas Peruanas (NTP) aplicables a proyectos e ingeniería nacional.</span>
+                            </div>
+                            <a href="https://tiendavirtual.indecopi.gob.pe/" target="_blank" rel="noopener noreferrer" class="resource-link">Consultar</a>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">ALICIA - Concytec</span>
+                                <span class="resource-item-desc">Repositorio Nacional Digital de Ciencia, Tecnología e Innovación.</span>
+                            </div>
+                            <a href="https://alicia.concytec.gob.pe/vufind/" target="_blank" rel="noopener noreferrer" class="resource-link">Acceder</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 2: Citación -->
+                <div class="resource-card reveal">
+                    <div class="resource-icon-box gold">
+                        <i data-lucide="book-marked"></i>
+                    </div>
+                    <h3>Estilos de Citación</h3>
+                    <p>Organiza las referencias técnicas, comerciales y normativas de tu TSP según el formato oficial.</p>
+                    <div class="resource-list-container">
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">Estilo de Citación IEEE</span>
+                                <span class="resource-item-desc">Guía oficial con ejemplos detallados para ingeniería y patentes.</span>
+                            </div>
+                            <a href="https://wordvice.com/blog/ieee-citation-examples-guidelines/" target="_blank" rel="noopener noreferrer" class="resource-link">Guía IEEE</a>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">APA 7ª Edición</span>
+                                <span class="resource-item-desc">Guía digital en PDF del estilo de redacción complementario.</span>
+                            </div>
+                            <a href="https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf" target="_blank" rel="noopener noreferrer" class="resource-link">Guía APA (PDF)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 3: Estructuras y Portadas -->
+                <div class="resource-card reveal">
+                    <div class="resource-icon-box orange">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <h3>Carátula y Plantillas TSP</h3>
+                    <p>Descarga los formatos oficiales adaptados a la modalidad de titulación por Suficiencia Profesional.</p>
+                    <div class="resource-list-container">
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">Modelo Carátula TSP FIPS.docx</span>
+                                <span class="resource-item-desc">Plantilla oficial con los campos requeridos para la portada del informe final.</span>
+                            </div>
+                            <a href="src/EjemploCaratulas/Modelo%20Caratula%20TDS.docx" download class="resource-link">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 4: Recursos por Especialidad -->
+                <div class="resource-card reveal">
+                    <div class="resource-icon-box gold">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <h3>Recursos por Especialidad</h3>
+                    <p>Metodologías y marcos de trabajo sugeridos en la directiva para las especialidades de ingeniería de la FIPS.</p>
+                    <div class="resource-list-container">
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">Sistemas e Informática / Computación</span>
+                                <span class="resource-item-desc">Marcos: <strong>Scrum, DevOps, ITIL, Kanban</strong>. Herramientas: <strong>Bases de Datos, Cloud y Redes</strong>.</span>
+                            </div>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">Mecánica y Eléctrica / Electrónica</span>
+                                <span class="resource-item-desc">Confiabilidad: <strong>RCM, RCA (Ishikawa, Pareto), AMEF/FMEA</strong>, <strong>SCADA, Instrumentación</strong>.</span>
+                            </div>
+                        </div>
+                        <div class="resource-item">
+                            <div class="resource-info">
+                                <span class="resource-item-title">Industrial</span>
+                                <span class="resource-item-desc">Procesos y Calidad: <strong>Lean Manufacturing, Six Sigma, SIPOC, Diagramas de Flujo</strong>.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resource 5: Videos -->
+                <div class="resource-card reveal">
+                    <div class="resource-icon-box red" style="background: rgba(239, 83, 80, 0.1); border: 2.5px solid #EF5350; color: #EF5350;">
+                        <i data-lucide="video"></i>
+                    </div>
+                    <h3>Videos Informativos</h3>
+                    <p>Accede a guías explicativas para la sustentación y estructuración de los 5 capítulos de tu TSP.</p>
+                    <div class="resource-list-container" style="justify-content: center; align-items: center; min-height: 120px; border-top: 1px dashed var(--color-border); margin-top: 16px;">
+                        <span style="font-size: 0.9rem; font-style: italic; color: var(--color-text-muted); text-align: center;">Próximamente tutoriales y sesiones explicativas paso a paso aquí.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="brand-logo-row">
+                    <img src="Logos/LogoUnsa.png" alt="Logo UNSA" class="footer-logo-img">
+                    <h3>UNSA - FIPS</h3>
+                </div>
+                <p>Universidad Nacional de San Agustín de Arequipa<br>Facultad de Ingeniería de Producción y Servicios (FIPS)</p>
+                <div class="academic-year">Modalidad TSP: 2026</div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proposito">Propósito y Principios</a></li>
+                    <li><a href="#ruta">Ruta de Capítulos</a></li>
+                    <li><a href="#estructura">Guía de Estructura</a></li>
+                    <li><a href="#checklist">Checklist Final</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Recursos Externos</h4>
+                <ul>
+                    <li><a href="https://www.unsa.edu.pe" target="_blank" rel="noopener noreferrer">Portal UNSA</a></li>
+                    <li><a href="https://fips.unsa.edu.pe" target="_blank" rel="noopener noreferrer">FIPS</a></li>
+                    <li><a href="https://scopus.com" target="_blank" rel="noopener noreferrer">Scopus</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contacto FIPS</h4>
+                <ul class="footer-contact-list">
+                    <li><i data-lucide="map-pin" class="footer-contact-icon"></i> Pabellones FIPS, UNSA</li>
+                    <li><i data-lucide="mail" class="footer-contact-icon"></i> fips@unsa.edu.pe</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container" style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 24px; margin-top: 24px; display: flex; justify-content: center;">
+            <div style="display: flex; align-items: center; gap: 12px; background: rgba(212, 175, 55, 0.1); border: 1.5px solid var(--color-accent-gold); padding: 12px 18px; border-radius: 8px; max-width: 720px; text-align: left; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+                <i data-lucide="shield-alert" style="color: var(--color-accent-gold); width: 22px; height: 22px; flex-shrink: 0;"></i>
+                <p style="font-size: 0.85rem; color: #E0E0E0; margin: 0; line-height: 1.5; font-weight: 600;">
+                    Esta página funciona como una herramienta interactiva de orientación para la construcción del Trabajo de Suficiencia Profesional.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Facultad de Ingeniería de Producción y Servicios - FIPS - UNSA. Arequipa, Perú. Todos los derechos reservados.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="Linkedin"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Disclaimer Modal Overlay -->
+    <div class="disclaimer-modal-overlay" id="disclaimerModal">
+        <div class="disclaimer-modal-card">
+            <div class="disclaimer-modal-icon">
+                <i data-lucide="shield-alert"></i>
+            </div>
+            <h2>Aviso Importante</h2>
+            <p>Esta página funciona como una herramienta de orientación práctica para la construcción del Trabajo de Suficiencia Profesional (TSP) de la FIPS - UNSA.</p>
+            <button class="btn btn-accent disclaimer-btn ripple" id="closeDisclaimerBtn">Entendido e Ingresar</button>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+</body>
+</html>
