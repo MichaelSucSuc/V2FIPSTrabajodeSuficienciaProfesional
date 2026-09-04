@@ -1062,20 +1062,20 @@ button {
 }
 
 .card-category {
-    font-family: var(--font-accent);
+    font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05em;
     color: var(--card-theme, var(--color-primary));
 }
 
 .card-title {
     font-family: var(--font-heading);
-    font-size: 1.85rem;
+    font-size: 2.25rem;
     font-weight: 800;
     letter-spacing: -0.02em;
-    line-height: 1.25;
+    line-height: 1.2;
     margin-bottom: 16px;
 }
 
