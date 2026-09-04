@@ -246,6 +246,24 @@ function updateChecklistProgress() {
         const offset = circumference - (percent / 100) * circumference;
         circle.style.strokeDashoffset = offset;
     }
+
+    // Actualizar badges de conteo por cada tarjeta de capítulo
+    const categoryCards = document.querySelectorAll('.checklist-category-card');
+    categoryCards.forEach(card => {
+        const catCbs = card.querySelectorAll('.checklist-cb');
+        const badge = card.querySelector('.category-count-badge');
+        if (catCbs.length > 0 && badge) {
+            let catChecked = 0;
+            catCbs.forEach(c => { if (c.checked) catChecked++; });
+            if (catChecked === catCbs.length && catCbs.length > 0) {
+                badge.textContent = `${catChecked}/${catCbs.length} ✓`;
+                badge.classList.add('completed');
+            } else {
+                badge.textContent = `${catChecked}/${catCbs.length}`;
+                badge.classList.remove('completed');
+            }
+        }
+    });
 }
 
 window.resetChecklist = function() {

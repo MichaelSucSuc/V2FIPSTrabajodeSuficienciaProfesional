@@ -1204,10 +1204,9 @@ button {
     gap: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 820px) {
     .checklist-grid-grouped {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-flow: dense;
     }
 }
 
@@ -1219,67 +1218,137 @@ button {
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
     transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .checklist-category-card:hover {
-    border-color: rgba(var(--color-primary-rgb), 0.2);
+    border-color: rgba(var(--color-primary-rgb), 0.25);
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
+}
+
+@media (min-width: 820px) {
+    .category-card-wide {
+        grid-column: 1 / -1;
+    }
 }
 
 .category-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 12px;
     border-bottom: 1px solid var(--color-border);
-    padding-bottom: 12px;
+    padding-bottom: 14px;
 }
 
-.category-icon {
-    width: 22px;
-    height: 22px;
+.category-header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.category-icon-wrapper {
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-md);
+    background: rgba(var(--color-primary-rgb), 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-primary);
+    flex-shrink: 0;
 }
 
-[data-theme="dark"] .category-icon {
+[data-theme="dark"] .category-icon-wrapper {
+    background: rgba(var(--color-primary-rgb), 0.2);
     color: var(--color-primary-light);
 }
 
-.category-header h3 {
-    font-size: 1.15rem;
+.category-icon-wrapper i {
+    width: 20px;
+    height: 20px;
+}
+
+.category-header-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.category-tag {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-accent-gold);
+}
+
+.category-header-titles h3 {
+    font-size: 1.05rem;
     font-weight: 700;
     color: var(--color-text);
+    margin: 0;
+}
+
+.category-count-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    transition: all var(--transition-fast);
+}
+
+.category-count-badge.completed {
+    background: rgba(46, 125, 50, 0.12);
+    border-color: rgba(46, 125, 50, 0.35);
+    color: #2e7d32;
+}
+
+[data-theme="dark"] .category-count-badge.completed {
+    background: rgba(76, 175, 80, 0.18);
+    border-color: rgba(76, 175, 80, 0.4);
+    color: #81c784;
 }
 
 .category-items {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+}
+
+.category-items-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 @media (min-width: 768px) {
-    .revision-card {
-        grid-column: 1 / -1;
+    .category-items-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 .checklist-item {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 14px;
     cursor: pointer;
-    padding: 12px;
+    padding: 12px 14px;
     border-radius: var(--radius-md);
     background: var(--color-bg);
     border: 1px solid var(--color-border);
-    transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+    transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .checklist-item:hover {
     border-color: var(--color-primary-light);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
 }
 
 .checklist-cb {
@@ -1287,24 +1356,25 @@ button {
 }
 
 .custom-cb {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border: 2px solid var(--color-border);
-    border-radius: 6px;
+    border-radius: 5px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     background: var(--color-bg);
     position: relative;
+    margin-top: 1px;
     transition: border-color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .custom-cb::after {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 6px;
+    width: 9px;
+    height: 5px;
     border-left: 2px solid #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
     transform: rotate(-45deg) translate(1px, -1px);
@@ -1322,8 +1392,9 @@ button {
 }
 
 .item-text {
-    font-size: 0.9rem;
-    line-height: 1.4;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: var(--color-text);
     transition: color var(--transition-fast), text-decoration var(--transition-fast);
 }
 
