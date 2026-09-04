@@ -316,6 +316,18 @@ button {
     margin: 0 auto;
 }
 
+.text-left {
+    text-align: left;
+}
+
+.text-justify-full {
+    max-width: 100% !important;
+    margin: 0 !important;
+    text-align: justify !important;
+    text-justify: inter-word;
+    line-height: 1.7;
+}
+
 /* ==========================================================================
    SCROLL PROGRESS BAR & HEADER
    ========================================================================== */
