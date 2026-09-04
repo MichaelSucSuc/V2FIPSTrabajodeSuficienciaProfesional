@@ -1063,10 +1063,11 @@ button {
 
 .card-category {
     font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 0.95rem;
+    font-weight: 800;
+    font-size: 2.25rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
     color: var(--card-theme, var(--color-primary));
 }
 
@@ -2395,7 +2396,8 @@ button {
 }
 
 @media (max-width: 768px) {
-    .card-title {
+    .card-title,
+    .card-category {
         font-size: 1.4rem;
     }
     .horizontal-flow-steps {
