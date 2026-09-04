@@ -1071,9 +1071,12 @@ button {
 }
 
 .card-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 12px;
+    font-family: var(--font-heading);
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    margin-bottom: 16px;
 }
 
 .card-description {
@@ -2392,6 +2395,9 @@ button {
 }
 
 @media (max-width: 768px) {
+    .card-title {
+        font-size: 1.4rem;
+    }
     .horizontal-flow-steps {
         flex-direction: column;
         align-items: stretch;
