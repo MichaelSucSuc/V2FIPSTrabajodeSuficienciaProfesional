@@ -1272,7 +1272,7 @@ button {
     cursor: pointer;
     padding: 12px;
     border-radius: var(--radius-md);
-    background: var(--color-bg-alt);
+    background: var(--color-bg);
     border: 1px solid var(--color-border);
     transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
 }
@@ -1295,7 +1295,7 @@ button {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    background: var(--color-bg-alt);
+    background: var(--color-bg);
     position: relative;
     transition: border-color var(--transition-fast), background-color var(--transition-fast);
 }

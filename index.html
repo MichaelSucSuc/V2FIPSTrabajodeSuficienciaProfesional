@@ -893,130 +893,168 @@
                     </div>
                 </div>
 
-                <div class="checklist-category-card" style="box-shadow: none; border: none; padding: 0; background: transparent;">
-                    <div class="category-items" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px;">
-                        
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-1">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">La experiencia profesional seleccionada es real, verificable y pertinente.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-2">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">El Capítulo I explica quién soy profesionalmente sin convertirse en un CV extenso.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-3">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">La organización y el área se describen solo en lo necesario.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-4">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">El problema está claramente identificado y sustentado con evidencia.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-5">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Los objetivos son coherentes con el problema.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-6">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">El sustento profesional incluye solo teoría, metodologías, herramientas y criterios realmente utilizados.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-7">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">La situación inicial cuenta con una línea base o evidencia verificable.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-8">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">El diagnóstico explica las causas del problema.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-9">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">La solución propuesta responde al diagnóstico.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-10">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Las actividades del Capítulo IV se presentan de manera secuencial.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-11">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Se distingue claramente mi participación de la participación del equipo.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-12">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Las evidencias principales aparecen en el cuerpo del trabajo.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-13">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Los indicadores tienen valores iniciales y finales cuando corresponde.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-14">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Los resultados están relacionados con los objetivos.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-15">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Existe una comparación antes/después cuando es posible.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-16">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">El aporte profesional está expresado de manera explícita.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-17">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Las conclusiones se derivan de los resultados.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-18">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Las recomendaciones se derivan de resultados, limitaciones o lecciones aprendidas.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-19">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">Se ha protegido la información confidencial.</span>
-                        </label>
-
-                        <label class="checklist-item">
-                            <input type="checkbox" class="checklist-cb" data-id="chk-20">
-                            <span class="custom-cb"></span>
-                            <span class="item-text">No existen repeticiones innecesarias entre capítulos.</span>
-                        </label>
-
+                <div class="checklist-grid-grouped">
+                    
+                    <!-- Capítulo I: Experiencia Profesional -->
+                    <div class="checklist-category-card">
+                        <div class="category-header">
+                            <i data-lucide="user-check" class="category-icon"></i>
+                            <h3>Capítulo I: Experiencia Profesional</h3>
+                        </div>
+                        <div class="category-items">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-1">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">La experiencia profesional seleccionada es real, verificable y pertinente.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-2">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">El Capítulo I explica quién soy profesionalmente sin convertirse en un CV extenso.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-3">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">La organización y el área se describen solo en lo necesario.</span>
+                            </label>
+                        </div>
                     </div>
+
+                    <!-- Capítulo II: Problema y Objetivos -->
+                    <div class="checklist-category-card">
+                        <div class="category-header">
+                            <i data-lucide="target" class="category-icon"></i>
+                            <h3>Capítulo II: Problema y Objetivos</h3>
+                        </div>
+                        <div class="category-items">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-4">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">El problema está claramente identificado y sustentado con evidencia.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-5">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Los objetivos son coherentes con el problema.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo III: Sustento Profesional -->
+                    <div class="checklist-category-card">
+                        <div class="category-header">
+                            <i data-lucide="book-open" class="category-icon"></i>
+                            <h3>Capítulo III: Sustento Profesional</h3>
+                        </div>
+                        <div class="category-items">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-6">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">El sustento profesional incluye solo teoría, metodologías, herramientas y criterios realmente utilizados.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo IV: Desarrollo de la Experiencia Profesional -->
+                    <div class="checklist-category-card">
+                        <div class="category-header">
+                            <i data-lucide="cogs" class="category-icon"></i>
+                            <h3>Capítulo IV: Desarrollo de la Experiencia</h3>
+                        </div>
+                        <div class="category-items">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-7">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">La situación inicial cuenta con una línea base o evidencia verificable.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-8">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">El diagnóstico explica las causas del problema.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-9">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">La solución propuesta responde al diagnóstico.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-10">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Las actividades del Capítulo IV se presentan de manera secuencial.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-12">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Las evidencias principales aparecen en el cuerpo del trabajo.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-13">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Los indicadores tienen valores iniciales y finales cuando corresponde.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-14">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Los resultados están relacionados con los objetivos.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-15">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Existe una comparación antes/después cuando es posible.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo V: Aporte Profesional -->
+                    <div class="checklist-category-card">
+                        <div class="category-header">
+                            <i data-lucide="award" class="category-icon"></i>
+                            <h3>Capítulo V: Aporte Profesional</h3>
+                        </div>
+                        <div class="category-items">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-11">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Se distingue claramente mi participación de la participación del equipo.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-16">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">El aporte profesional está expresado de manera explícita.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Conclusiones, Recomendaciones y Criterios Transversales -->
+                    <div class="checklist-category-card revision-card">
+                        <div class="category-header">
+                            <i data-lucide="check-square" class="category-icon"></i>
+                            <h3>Conclusiones, Recomendaciones y Criterios Transversales</h3>
+                        </div>
+                        <div class="category-items" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-17">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Las conclusiones se derivan de los resultados.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-18">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Las recomendaciones se derivan de resultados, limitaciones o lecciones aprendidas.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-19">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">Se ha protegido la información confidencial.</span>
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox" class="checklist-cb" data-id="chk-20">
+                                <span class="custom-cb"></span>
+                                <span class="item-text">No existen repeticiones innecesarias entre capítulos.</span>
+                            </label>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="checklist-footer">

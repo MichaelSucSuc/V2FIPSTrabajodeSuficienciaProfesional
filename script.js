@@ -266,14 +266,31 @@ window.downloadChecklist = function() {
     let totalCheckboxes = 0;
     let checkedCount = 0;
 
-    const cbs = document.querySelectorAll('.checklist-cb');
-    cbs.forEach((cb, idx) => {
-        totalCheckboxes++;
-        const text = cb.parentNode.querySelector('.item-text').textContent.trim();
-        const status = cb.checked ? "[X] CUMPLIDO " : "[ ] PENDIENTE";
-        if (cb.checked) checkedCount++;
-        content += `${idx + 1}. ${status} - ${text}\n`;
-    });
+    const categories = document.querySelectorAll('.checklist-category-card');
+    if (categories.length > 0) {
+        categories.forEach(cat => {
+            const catTitle = cat.querySelector('.category-header h3')?.textContent.trim() || 'Capítulo';
+            content += `\n[ ${catTitle.toUpperCase()} ]\n`;
+            content += "--------------------------------------------------------\n";
+            const cbs = cat.querySelectorAll('.checklist-cb');
+            cbs.forEach((cb, idx) => {
+                totalCheckboxes++;
+                const text = cb.parentNode.querySelector('.item-text').textContent.trim();
+                const status = cb.checked ? "[X] CUMPLIDO " : "[ ] PENDIENTE";
+                if (cb.checked) checkedCount++;
+                content += `  ${idx + 1}. ${status} - ${text}\n`;
+            });
+        });
+    } else {
+        const cbs = document.querySelectorAll('.checklist-cb');
+        cbs.forEach((cb, idx) => {
+            totalCheckboxes++;
+            const text = cb.parentNode.querySelector('.item-text').textContent.trim();
+            const status = cb.checked ? "[X] CUMPLIDO " : "[ ] PENDIENTE";
+            if (cb.checked) checkedCount++;
+            content += `${idx + 1}. ${status} - ${text}\n`;
+        });
+    }
     content += "\n";
 
     const percent = totalCheckboxes > 0 ? Math.round((checkedCount / totalCheckboxes) * 100) : 0;
