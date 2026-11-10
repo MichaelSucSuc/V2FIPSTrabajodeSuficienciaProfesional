@@ -217,7 +217,13 @@
                         <div class="roadmap-line">
                             <div class="roadmap-progress-indicator" id="roadmapProgress"></div>
                         </div>
-                        <div class="roadmap-step-node active" data-step="1" onclick="scrollToStep(1)">
+                        <!-- Step 00: Conoce a los docentes -->
+                        <div class="roadmap-step-node step-node-zero active" data-step="0" onclick="scrollToStep(0)">
+                            <div class="node-circle node-circle-zero">00</div>
+                            <span class="node-label">Docentes</span>
+                            <div class="node-tooltip">Paso 0: Conoce a los docentes de tu línea de investigación</div>
+                        </div>
+                        <div class="roadmap-step-node" data-step="1" onclick="scrollToStep(1)">
                             <div class="node-circle">I</div>
                             <span class="node-label">Exp. Profesional</span>
                             <div class="node-tooltip">Capítulo I. Experiencia profesional</div>
@@ -274,6 +280,48 @@
 
             <div class="cards-grid" id="cardsGrid">
                 
+                <!-- Card 00: Conoce a los docentes de tu línea de investigación -->
+                <div class="thesis-card card-step-zero reveal" data-step="0" data-category="docentes">
+                    <div class="card-border-glow"></div>
+                    <div class="card-header">
+                        <span class="card-number badge-zero">Paso 00</span>
+                        <div class="card-icon-container icon-zero">
+                            <i data-lucide="users" class="card-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-badge-row">
+                            <span class="card-category">Fase Previa Esencial</span>
+                            <span class="card-badge badge-important">Indispensable</span>
+                        </div>
+                        <h3 class="card-title">Conoce a los Docentes y Líneas de Investigación de tu Carrera</h3>
+                        <p class="card-description">Antes de delimitar tu problema o redactar el Trabajo de Suficiencia Profesional (TSP), es requisito fundamental identificar las <strong>líneas de investigación oficiales</strong> de tu departamento académico y conocer a los docentes adscritos para coordinar tu asesoría.</p>
+                        
+                        <div class="card-key-points">
+                            <h4>Aspectos Clave a Evaluar:</h4>
+                            <ul>
+                                <li><strong>Alineamiento Temático:</strong> Tu experiencia y propuesta técnica deben encajar en una de las líneas y áreas de investigación aprobadas por tu escuela profesional.</li>
+                                <li><strong>Docentes Asesores:</strong> Revisa el perfil, grado académico y disponibilidad de los profesores de tu especialidad para la orientación de tu informe.</li>
+                                <li><strong>5 Carreras Profesionales:</strong> Acceso a los padrones oficiales de Sistemas (DAISI), Industrial (DAII), Electrónica (DAIE), Eléctrica (DAIEL) y Mecánica (DAIME).</li>
+                            </ul>
+                        </div>
+
+                        <div class="card-action-box">
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+                                <a href="https://drive.google.com/drive/folders/14v7k3rP8oqEboNhxOu8lNM8E77g67RJJ?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-docentes-action">
+                                    <i data-lucide="folder-open" style="width: 18px; height: 18px;"></i>
+                                    <span>Abrir Carpeta de Docentes y Líneas en Google Drive</span>
+                                    <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+                                </a>
+                                <a href="docentes.html" class="btn btn-secondary btn-docentes-action" style="box-shadow: none;">
+                                    <i data-lucide="graduation-cap" style="width: 18px; height: 18px;"></i>
+                                    <span>Ver Padrones por Escuela</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Card 01: CAPÍTULO I. EXPERIENCIA PROFESIONAL -->
                 <div class="thesis-card reveal" data-step="1" data-category="problema">
                     <div class="card-border-glow"></div>
@@ -1340,12 +1388,21 @@
             </div>
         </div>
 
-        <div class="container" style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 24px; margin-top: 24px; display: flex; justify-content: center;">
+        <div class="container" style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 24px; margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
             <div style="display: flex; align-items: center; gap: 12px; background: rgba(212, 175, 55, 0.1); border: 1.5px solid var(--color-accent-gold); padding: 12px 18px; border-radius: 8px; max-width: 720px; text-align: left; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
                 <i data-lucide="shield-alert" style="color: var(--color-accent-gold); width: 22px; height: 22px; flex-shrink: 0;"></i>
                 <p style="font-size: 0.85rem; color: #E0E0E0; margin: 0; line-height: 1.5; font-weight: 600;">
                     Esta página funciona como una herramienta interactiva de orientación para la construcción del Trabajo de Suficiencia Profesional.
                 </p>
+            </div>
+
+            <div class="visitor-counter-container">
+                <div class="visitor-counter-badge" title="Contador de visitas de la plataforma">
+                    <span class="visitor-pulse-dot"></span>
+                    <i data-lucide="eye" class="visitor-icon"></i>
+                    <span class="visitor-text">Visitas a la plataforma:</span>
+                    <span class="visitor-count" id="visitorCount">...</span>
+                </div>
             </div>
         </div>
 

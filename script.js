@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initRoadmapSync();
     initBackToTop();
     initDisclaimerModal();
+    initVisitorCounter();
 });
 
 /* ==========================================================================
@@ -354,7 +355,7 @@ function initRoadmapSync() {
     };
 
     window.addEventListener('scroll', () => {
-        let currentStep = 1;
+        let currentStep = 0;
         const triggerPoint = window.innerHeight / 2;
 
         cards.forEach(card => {
@@ -374,7 +375,7 @@ function initRoadmapSync() {
         });
 
         if (progress) {
-            const percent = ((currentStep - 1) / (nodes.length - 1)) * 100;
+            const percent = Math.max(0, Math.min(100, (currentStep / (nodes.length - 1)) * 100));
             progress.style.width = `${percent}%`;
         }
 
@@ -458,3 +459,82 @@ function initDisclaimerModal() {
         sessionStorage.setItem('disclaimerAccepted', 'true');
     });
 }
+
+/* ==========================================================================
+   GLOBAL VISITOR COUNTER
+   ========================================================================== */
+async function initVisitorCounter() {
+    const counterEl = document.getElementById('visitorCount');
+    if (!counterEl) return;
+
+    const namespace = 'fips-unsa-tsp-2026';
+    const key = 'visitas';
+    const sessionKey = 'tsp_visit_counted';
+    const alreadyCounted = sessionStorage.getItem(sessionKey);
+
+    // If first visit in current browser session, increment count (/up); otherwise read current count
+    const url = alreadyCounted 
+        ? `https://api.counterapi.dev/v1/${namespace}/${key}`
+        : `https://api.counterapi.dev/v1/${namespace}/${key}/up`;
+
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            if (data && typeof data.count !== 'undefined') {
+                animateCounter(counterEl, data.count);
+                sessionStorage.setItem(sessionKey, 'true');
+                return;
+            }
+        }
+        
+        // If read endpoint failed (e.g. key doesn't exist yet), attempt /up to create & increment
+        if (alreadyCounted) {
+            const fallbackResponse = await fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`);
+            if (fallbackResponse.ok) {
+                const data = await fallbackResponse.json();
+                if (data && typeof data.count !== 'undefined') {
+                    animateCounter(counterEl, data.count);
+                    return;
+                }
+            }
+        }
+
+        counterEl.textContent = 'Activo';
+    } catch (error) {
+        console.warn('Servicio de contador no disponible:', error);
+        counterEl.textContent = 'En línea';
+    }
+}
+
+function animateCounter(element, targetValue) {
+    const target = parseInt(targetValue, 10);
+    if (isNaN(target)) {
+        element.textContent = targetValue;
+        return;
+    }
+
+    const duration = 1200;
+    const start = 0;
+    const startTime = performance.now();
+
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function (easeOutQuad)
+        const ease = 1 - (1 - progress) * (1 - progress);
+        const currentCount = Math.floor(start + (target - start) * ease);
+        
+        element.textContent = currentCount.toLocaleString('es-PE');
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = target.toLocaleString('es-PE');
+        }
+    }
+
+    requestAnimationFrame(update);
+}
+

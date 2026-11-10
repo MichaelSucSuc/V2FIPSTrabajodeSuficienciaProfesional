@@ -1003,6 +1003,7 @@ button {
 .thesis-card[data-category="propuesta"] { --card-theme: #0288D1; }
 .thesis-card[data-category="planificacion"] { --card-theme: #E65100; }
 .thesis-card[data-category="sustento"] { --card-theme: var(--color-primary-dark); }
+.thesis-card[data-category="docentes"] { --card-theme: var(--color-accent-gold); }
 
 .thesis-card .card-border-glow {
     position: absolute;
@@ -2818,4 +2819,209 @@ button {
     height: 18px;
     flex-shrink: 0;
     margin-top: 2px;
+}
+
+/* ==========================================================================
+   VISITOR COUNTER BADGE
+   ========================================================================== */
+.visitor-counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 4px;
+}
+
+.visitor-counter-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.visitor-counter-badge:hover {
+    border-color: var(--color-accent-gold);
+    background: rgba(212, 175, 55, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+}
+
+.visitor-pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #10B981;
+    box-shadow: 0 0 8px #10B981;
+    animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.visitor-counter-badge .visitor-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--color-accent-gold);
+}
+
+.visitor-counter-badge .visitor-count {
+    color: var(--color-accent-gold);
+    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   PASO 00: DOCENTES & LÍNEAS DE INVESTIGACIÓN FIPS
+   ========================================================================== */
+.step-node-zero .node-circle-zero {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent)) !important;
+    color: #ffffff !important;
+    border-color: var(--color-accent-gold) !important;
+    box-shadow: 0 0 16px rgba(212, 175, 55, 0.4);
+}
+
+.badge-zero {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    color: #ffffff !important;
+    font-weight: 800;
+    font-size: 1.15rem;
+    padding: 6px 14px;
+    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon-zero {
+    background: rgba(212, 175, 55, 0.15) !important;
+    color: var(--color-accent-gold) !important;
+    border: 1px solid var(--color-accent-gold) !important;
+}
+
+.card-step-zero {
+    border: 2px solid var(--color-accent-gold) !important;
+    background: linear-gradient(135deg, var(--color-bg-alt), rgba(212, 175, 55, 0.05)) !important;
+}
+
+.card-step-zero .card-header {
+    justify-content: space-between !important;
+}
+
+.card-step-zero .card-category {
+    font-size: 1.35rem;
+    color: var(--color-accent-gold);
+}
+
+.card-action-box {
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px dashed var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.btn-docentes-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.6rem;
+    font-weight: 600;
+    font-size: 0.98rem;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+    width: fit-content;
+    transition: all var(--transition-fast);
+}
+
+.btn-docentes-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.35);
+}
+
+/* ==========================================================================
+   DIRECTORIO DE DOCENTES PAGE (docentes.html)
+   ========================================================================== */
+.docentes-main-content {
+    padding-top: 72px;
+    min-height: 80vh;
+}
+
+.docentes-hero-section {
+    padding: 3.5rem 1.5rem 2rem;
+    background: radial-gradient(circle at 50% 20%, rgba(139, 0, 0, 0.08) 0%, transparent 70%);
+}
+
+.docentes-hero-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--color-text);
+    margin: 1rem 0;
+    letter-spacing: -0.025em;
+}
+
+.docentes-hero-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    max-width: 680px;
+    margin: 0 auto 1.8rem;
+    line-height: 1.6;
+}
+
+.glass-panel {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.glass-panel:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-link-special {
+    background: rgba(139, 0, 0, 0.1);
+    color: var(--color-primary) !important;
+    border-radius: var(--radius-sm);
+    padding: 0.4rem 0.8rem !important;
+    font-weight: 700 !important;
+    border: 1px solid rgba(139, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+[data-theme="dark"] .nav-link-special {
+    background: rgba(165, 42, 42, 0.2);
+    color: #ffa4a4 !important;
+    border-color: rgba(165, 42, 42, 0.4);
+}
+
+.nav-icon-sm {
+    width: 16px;
+    height: 16px;
 }
